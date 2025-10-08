@@ -1,0 +1,181 @@
+{
+  "trip": {
+    "city": "New Orleans, LA",
+    "timezone": "America/Chicago",
+    "dates": {
+      "start": "2025-11-07",
+      "end": "2025-11-11"
+    },
+    "travelers": ["Luis Viera", "Gabriela Castrillo"]
+  },
+  "flights": {
+    "confirmation_code": "JPDWNN",
+    "source": "American Airlines (Email Confirmation)",
+    "outbound": [
+      {
+        "flight_number": "AA1301",
+        "date": "2025-11-07",
+        "from": "SJU",
+        "to": "MIA",
+        "depart_local": "2025-11-07T11:13:00",
+        "arrive_local": "2025-11-07T12:59:00"
+      },
+      {
+        "flight_number": "AA3140",
+        "date": "2025-11-07",
+        "from": "MIA",
+        "to": "MSY",
+        "depart_local": "2025-11-07T16:07:00",
+        "arrive_local": "2025-11-07T17:16:00"
+      }
+    ],
+    "return": [
+      {
+        "flight_number": "AA1993",
+        "date": "2025-11-11",
+        "from": "MSY",
+        "to": "MIA",
+        "depart_local": "2025-11-11T07:05:00",
+        "arrive_local": "2025-11-11T10:05:00"
+      },
+      {
+        "flight_number": "AA1870",
+        "date": "2025-11-11",
+        "from": "MIA",
+        "to": "SJU",
+        "depart_local": "2025-11-11T14:19:00",
+        "arrive_local": "2025-11-11T17:52:00"
+      }
+    ]
+  },
+  "hotel": {
+    "name": "Hotel de la Poste",
+    "location": "French Quarter, New Orleans",
+    "check_in": "2025-11-07",
+    "check_out": "2025-11-11",
+    "source": "Direct Reservation",
+    "coords": {
+      "lat": 29.9574,
+      "lng": -90.065,
+      "label": "Hotel de la Poste"
+    }
+  },
+  "reservations": [
+    {
+      "date": "2025-11-07",
+      "time": "21:00",
+      "restaurant": "Arnaud’s Jazz Bistro + French 75 Bar",
+      "confirmation_number": "2109818395",
+      "source": "OpenTable",
+      "party_size": 2,
+      "address": "813 Bienville St, New Orleans, LA 70112",
+      "type": "Dinner"
+    },
+    {
+      "date": "2025-11-08",
+      "time": "10:15",
+      "restaurant": "Tana",
+      "confirmation_number": "37955",
+      "source": "OpenTable",
+      "party_size": 2,
+      "address": "2919 Metairie Rd, Metairie, LA 70001",
+      "type": "Brunch"
+    },
+    {
+      "date": "2025-11-08",
+      "time": "19:30",
+      "restaurant": "Muriel’s Jackson Square",
+      "confirmation_number": "2110542113",
+      "source": "OpenTable",
+      "party_size": 2,
+      "address": "801 Chartres St, New Orleans, LA 70116",
+      "type": "Dinner"
+    },
+    {
+      "date": "2025-11-09",
+      "time": "10:15",
+      "restaurant": "Atchafalaya Restaurant",
+      "confirmation_number": "2110226961",
+      "source": "OpenTable",
+      "party_size": 2,
+      "address": "901 Louisiana Ave, New Orleans, LA 70115",
+      "type": "Brunch"
+    },
+    {
+      "date": "2025-11-09",
+      "time": "18:15",
+      "restaurant": "Brennan’s",
+      "confirmation_number": "2110373076",
+      "source": "OpenTable",
+      "party_size": 2,
+      "address": "417 Royal St, New Orleans, LA 70130",
+      "type": "Dinner"
+    }
+  ],
+  "tickets": [
+    {
+      "ticket_name": "Audubon Experience Pass",
+      "includes": ["Aquarium", "Insectarium", "Zoo"],
+      "purchase_date": "2025-11-08",
+      "valid_days": 5,
+      "price_per_person_usd": 62.94,
+      "total_paid_usd": 125.88,
+      "source": "Audubon Nature Institute WebStore",
+      "confirmation_number": "Order #EC8E06DB-BF60-491D"
+    }
+  ],
+  "itinerary": {
+    "2025-11-07": {
+      "day": "Viernes",
+      "items": [
+        "11:13 AM – Vuelo SJU → MIA (AA1301)",
+        "4:07 PM – Vuelo MIA → MSY (AA3140)",
+        "5:30–7:30 PM – Check-in en Hotel de la Poste",
+        "9:00 PM – Cena en Arnaud’s Jazz Bistro + French 75 Bar (Confirmación: 2109818395)"
+      ]
+    },
+    "2025-11-08": {
+      "day": "Sábado",
+      "items": [
+        "10:15 AM – Brunch en Tana (Confirmación: 37955)",
+        "12:00–2:30 PM – Audubon Aquarium + Insectarium (Audubon Pass)",
+        "3:00–4:00 PM – New Orleans Pharmacy Museum",
+        "4:15–5:30 PM – French Market / Royal Street",
+        "7:30 PM – Cena en Muriel’s Jackson Square (Confirmación: 2110542113)",
+        "9:30 PM – Potions Speakeasy (acceso con contraseña, opcional)"
+      ]
+    },
+    "2025-11-09": {
+      "day": "Domingo",
+      "items": [
+        "10:15 AM – Brunch en Atchafalaya Restaurant (Confirmación: 2110226961)",
+        "12:30–3:00 PM – Audubon Aquarium + Insectarium (si no se completó el sábado)",
+        "3:30–6:00 PM – Audubon Zoo (Audubon Pass)",
+        "6:15 PM – Cena en Brennan’s (Confirmación: 2110373076)"
+      ]
+    },
+    "2025-11-10": {
+      "day": "Lunes",
+      "items": [
+        "9:30–11:30 AM – Cemetery Tour (pendiente de reserva)",
+        "12:30 PM – Almuerzo libre (opciones: Sylvain, Coquette, The Elysian Bar)",
+        "7:00 PM – Cena final (opciones: N7 o Vessel NOLA)"
+      ]
+    },
+    "2025-11-11": {
+      "day": "Martes",
+      "items": [
+        "5:30 AM – Traslado al aeropuerto",
+        "7:05 AM – Vuelo MSY → MIA (AA1993)",
+        "2:19 PM – Vuelo MIA → SJU (AA1870)"
+      ]
+    }
+  },
+  "notes": [
+    "Todas las reservas de restaurante confirmadas a través de OpenTable.",
+    "Audubon Experience Pass comprado vía WebStore oficial, válido 5 días.",
+    "Potions es un speakeasy temático; contraseña provista en Vampire Tour.",
+    "Tiempos de traslado ajustados para Metairie (Tana Brunch)."
+  ]
+}
+
