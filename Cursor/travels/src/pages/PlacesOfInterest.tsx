@@ -24,6 +24,8 @@ type PlaceOfInterest = {
 };
 
 function PlaceCard({ place }: { place: PlaceOfInterest }) {
+  const [imageError, setImageError] = useState(false);
+  
   const handleNavigate = () => {
     if (place.latitude && place.longitude) {
       const url = `https://maps.google.com/?q=${place.latitude},${place.longitude}`;
@@ -45,20 +47,52 @@ function PlaceCard({ place }: { place: PlaceOfInterest }) {
     return categoryColors[category] || "bg-slate-100 text-slate-700 border-slate-200";
   };
 
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case "restaurant":
+        return "🍽️";
+      case "bar":
+        return "🍺";
+      case "museum":
+        return "🏛️";
+      case "attraction":
+        return "🎢";
+      case "tour":
+        return "🎭";
+      case "shop":
+        return "🛍️";
+      case "market":
+        return "🏪";
+      default:
+        return "📍";
+    }
+  };
+
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-xl">
       {/* Imagen del lugar */}
       {place.image_url && (
-        <div className="relative h-48 w-full overflow-hidden bg-slate-100">
-          <img
-            src={place.image_url}
-            alt={place.name}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
-            onError={(e) => {
-              e.currentTarget.style.display = "none";
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+        <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-violet-100 to-purple-100">
+          {!imageError ? (
+            <>
+              <img
+                src={place.image_url}
+                alt={place.name}
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                onError={() => setImageError(true)}
+                crossOrigin="anonymous"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            </>
+          ) : (
+            <div className="flex h-full w-full items-center justify-center">
+              <div className="text-center">
+                <div className="text-6xl">{getCategoryIcon(place.category)}</div>
+                <p className="mt-2 text-sm font-medium text-slate-600">{place.category}</p>
+              </div>
+            </div>
+          )}
           <div className="absolute bottom-3 left-3">
             <span
               className={`rounded-full border px-3 py-1 text-xs font-bold uppercase tracking-wide backdrop-blur-sm ${getCategoryColor(place.category)}`}
