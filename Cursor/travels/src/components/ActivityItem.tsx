@@ -1,6 +1,5 @@
-import { useTripStore } from "@/store/useTripStore";
 import type { Activity } from "@/store/useTripStore";
-import { MapPin, NotebookPen, Pencil, Ticket, Trash2 } from "lucide-react";
+import { MapPin, NotebookPen, Pencil, Ticket } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type ActivityItemProps = {
@@ -18,7 +17,6 @@ const categories: Record<string, string> = {
 };
 
 export function ActivityItem({ activity, day, index }: ActivityItemProps) {
-  const removeActivity = useTripStore((state) => state.removeActivity);
 
   const { time, title, category, notes, confirmation, source, address, link } = activity;
   const maps = link ?? (address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}` : null);
@@ -43,13 +41,14 @@ export function ActivityItem({ activity, day, index }: ActivityItemProps) {
         </div>
 
         <div className="flex items-center gap-2">
-          <button
+          {/* Botón de eliminar deshabilitado */}
+          {/* <button
             className="rounded-lg border border-slate-200 p-2 text-slate-500 hover:bg-slate-50"
             onClick={() => removeActivity(day, index)}
             aria-label="Eliminar actividad"
           >
             <Trash2 className="h-4 w-4" />
-          </button>
+          </button> */}
           <button
             className="rounded-lg border border-slate-200 p-2 text-slate-500 hover:bg-slate-50"
             aria-label="Editar actividad"
