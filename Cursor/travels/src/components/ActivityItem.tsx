@@ -16,8 +16,7 @@ const categories: Record<string, string> = {
   Otro: "bg-slate-100 text-slate-600",
 };
 
-export function ActivityItem({ activity, day, index }: ActivityItemProps) {
-
+export function ActivityItem({ activity }: ActivityItemProps) {
   const { time, title, category, notes, confirmation, source, address, link } = activity;
   const maps = link ?? (address ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}` : null);
 
