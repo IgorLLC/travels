@@ -8,7 +8,45 @@ import {
   Calendar,
   Instagram as InstagramIcon,
   Filter,
+  UtensilsCrossed,
+  Wine,
+  Landmark,
+  School,
+  ShoppingBag,
+  FerrisWheel,
+  Store,
 } from "lucide-react";
+
+const CATEGORY_LABELS: Record<string, string> = {
+  restaurant: "Restaurantes",
+  bar: "Bares",
+  tour: "Tours",
+  museum: "Museos",
+  shop: "Tiendas",
+  attraction: "Atracciones",
+  market: "Mercados",
+};
+
+const renderCategoryIcon = (category: string, className = "h-10 w-10 text-slate-400") => {
+  switch (category) {
+    case "restaurant":
+      return <UtensilsCrossed className={className} />;
+    case "bar":
+      return <Wine className={className} />;
+    case "museum":
+      return <School className={className} />;
+    case "attraction":
+      return <FerrisWheel className={className} />;
+    case "tour":
+      return <Landmark className={className} />;
+    case "shop":
+      return <ShoppingBag className={className} />;
+    case "market":
+      return <Store className={className} />;
+    default:
+      return <MapPin className={className} />;
+  }
+};
 
 type PlaceOfInterest = {
   name: string;
@@ -47,27 +85,6 @@ function PlaceCard({ place }: { place: PlaceOfInterest }) {
     return categoryColors[category] || "bg-slate-100 text-slate-700 border-slate-200";
   };
 
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case "restaurant":
-        return "🍽️";
-      case "bar":
-        return "🍺";
-      case "museum":
-        return "🏛️";
-      case "attraction":
-        return "🎢";
-      case "tour":
-        return "🎭";
-      case "shop":
-        return "🛍️";
-      case "market":
-        return "🏪";
-      default:
-        return "📍";
-    }
-  };
-
   return (
     <article className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all hover:shadow-xl">
       {/* Imagen del lugar */}
@@ -80,17 +97,18 @@ function PlaceCard({ place }: { place: PlaceOfInterest }) {
                 alt={place.name}
                 className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 onError={() => setImageError(true)}
-                crossOrigin="anonymous"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
             </>
           ) : (
-            <div className="flex h-full w-full items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl">{getCategoryIcon(place.category)}</div>
-                <p className="mt-2 text-sm font-medium text-slate-600">{place.category}</p>
+            <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-violet-50">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white shadow">
+                {renderCategoryIcon(place.category, "h-8 w-8 text-violet-500")}
               </div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-violet-600">
+                {CATEGORY_LABELS[place.category] || place.category}
+              </p>
             </div>
           )}
           <div className="absolute bottom-3 left-3">
@@ -194,6 +212,14 @@ export function PlacesOfInterest() {
     return ["Todos", ...Array.from(categoriesSet).sort()];
   }, [places]);
 
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    places.forEach((place) => {
+      counts[place.category] = (counts[place.category] ?? 0) + 1;
+    });
+    return counts;
+  }, [places]);
+
   // Filtrar lugares por categoría
   const filteredPlaces = useMemo(() => {
     if (selectedCategory === "Todos") return places;
@@ -212,16 +238,6 @@ export function PlacesOfInterest() {
     });
     return grouped;
   }, [filteredPlaces]);
-
-  const categoryLabels: Record<string, string> = {
-    restaurant: "Restaurantes",
-    bar: "Bares",
-    tour: "Tours",
-    museum: "Museos",
-    shop: "Tiendas",
-    attraction: "Atracciones",
-    market: "Mercados",
-  };
 
   return (
     <div className="space-y-6">
@@ -245,16 +261,17 @@ export function PlacesOfInterest() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+              className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition ${
                 selectedCategory === cat
                   ? "bg-violet-600 text-white shadow-md"
                   : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              {cat === "Todos" ? cat : categoryLabels[cat] || cat}
+          {cat !== "Todos" && renderCategoryIcon(cat, "h-4 w-4")}
+              <span>{cat === "Todos" ? cat : CATEGORY_LABELS[cat] || cat}</span>
               {cat !== "Todos" && (
-                <span className="ml-1.5 text-xs opacity-75">
-                  ({places.filter((p) => p.category === cat).length})
+                <span className="ml-1.5 rounded-full bg-white/30 px-2 py-0.5 text-[11px] font-semibold text-white">
+                  {categoryCounts[cat] ?? 0}
                 </span>
               )}
             </button>
@@ -271,8 +288,9 @@ export function PlacesOfInterest() {
             .map(([category, placesInCategory]) => (
               <section key={category}>
                 <div className="mb-4 flex items-center gap-3">
+                  {renderCategoryIcon(category, "h-6 w-6 text-violet-500")}
                   <h3 className="text-2xl font-bold text-slate-900">
-                    {categoryLabels[category] || category}
+                    {CATEGORY_LABELS[category] || category}
                   </h3>
                   <span className="rounded-full bg-violet-100 px-3 py-1 text-sm font-semibold text-violet-700">
                     {placesInCategory.length}
