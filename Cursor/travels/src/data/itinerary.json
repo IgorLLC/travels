@@ -261,171 +261,195 @@
   "places_of_interest": [
     {
       "name": "Arnaud's Jazz Bistro + French 75 Bar",
-      "type": "Restaurant / Jazz Bar",
-      "address": "813 Bienville St, French Quarter, New Orleans, LA 70112",
-      "latitude": 29.957405,
-      "longitude": -90.068697,
-      "notes": "Clásico restaurante criollo con música jazz."
-    },
-    {
-      "name": "Haus of Hoodoo",
-      "type": "Spiritual Shop / Cultural",
-      "address": "1716 Saint Charles Ave, New Orleans, LA 70130",
-      "latitude": 29.9370806,
-      "longitude": -90.0765932,
-      "notes": "Tienda botánica / espiritual. (Físico cerrado, presencia online activa)."
-    },
-    {
-      "name": "Audubon Aquarium & Insectarium",
-      "type": "Attraction / Museum",
-      "address": "1 Canal St, New Orleans, LA",
-      "latitude": 29.9487,
-      "longitude": -90.0626,
-      "notes": "Incluido en el pase Audubon Experience."
-    },
-    {
-      "name": "Audubon Zoo",
-      "type": "Zoological Park",
-      "address": "6500 Magazine St, New Orleans, LA",
-      "latitude": 29.9215,
-      "longitude": -90.1313,
-      "notes": "Parte del combo de actividades naturales."
-    },
-    {
-      "name": "New Orleans Pharmacy Museum",
-      "type": "Historical Museum",
-      "address": "514 Chartres St, French Quarter, New Orleans, LA",
-      "latitude": 29.9566,
-      "longitude": -90.0642,
-      "notes": "Museo de medicina antigua, pócimas y prácticas del siglo XIX."
-    },
-    {
-      "name": "Tana",
-      "type": "Restaurant / Brunch",
-      "address": "2919 Metairie Rd, Metairie, LA 70001",
-      "latitude": 29.9846,
-      "longitude": -90.0987,
-      "notes": "Brunch confirmado para sábado 8 nov."
+      "category": "restaurant",
+      "address": "813 Bienville St, New Orleans, LA 70112",
+      "phone": "+1-504-523-5433",
+      "website": "https://www.arnaudsrestaurant.com/",
+      "reservation_link": "https://www.opentable.com/r/arnauds-jazz-bistro-new-orleans",
+      "instagram": "https://www.instagram.com/arnaudsnola/",
+      "latitude": 29.9574,
+      "longitude": -90.0687,
+      "image_url": "https://images.otstatic.com/prod1/24600755/2/large.jpg"
     },
     {
       "name": "Muriel's Jackson Square",
-      "type": "Restaurant",
-      "address": "801 Chartres St, French Quarter, New Orleans, LA 70116",
-      "latitude": 29.9571,
-      "longitude": -90.0637,
-      "notes": "Cena confirmada sábado 8 nov."
+      "category": "restaurant",
+      "address": "801 Chartres St, New Orleans, LA 70116",
+      "phone": "+1-504-568-1885",
+      "website": "https://www.muriels.com/",
+      "reservation_link": "https://www.opentable.com/r/muriels-jackson-square-new-orleans",
+      "instagram": "https://www.instagram.com/murielsjs/",
+      "latitude": 29.9579,
+      "longitude": -90.0648,
+      "image_url": "https://images.otstatic.com/prod1/24600839/2/large.jpg"
     },
     {
       "name": "Brennan's",
-      "type": "Restaurant",
-      "address": "417 Royal St, French Quarter, New Orleans, LA 70130",
-      "latitude": 29.9576,
-      "longitude": -90.0649,
-      "notes": "Cena confirmada domingo 9 nov."
+      "category": "restaurant",
+      "address": "417 Royal St, New Orleans, LA 70130",
+      "phone": "+1-504-525-9711",
+      "website": "https://www.brennansneworleans.com/",
+      "reservation_link": "https://www.opentable.com/brennans",
+      "instagram": "https://www.instagram.com/brennansnola/",
+      "latitude": 29.9583,
+      "longitude": -90.0658,
+      "image_url": "https://images.otstatic.com/prod1/24600879/2/large.jpg"
     },
     {
       "name": "Atchafalaya Restaurant",
-      "type": "Restaurant / Brunch",
+      "category": "restaurant",
       "address": "901 Louisiana Ave, New Orleans, LA 70115",
-      "latitude": 29.9286,
-      "longitude": -90.0821,
-      "notes": "Brunch confirmado domingo 9 nov."
+      "phone": "+1-504-891-9626",
+      "website": "https://www.atchafalayarestaurant.com/",
+      "reservation_link": "https://www.opentable.com/r/atchafalaya-restaurant-new-orleans",
+      "instagram": "https://www.instagram.com/atchafalaya_rest/",
+      "latitude": 29.9287,
+      "longitude": -90.0854,
+      "image_url": "https://images.otstatic.com/prod1/24599812/2/large.jpg"
+    },
+    {
+      "name": "Tana",
+      "category": "restaurant",
+      "address": "2919 Metairie Rd, Metairie, LA 70001",
+      "phone": "+1-504-533-8262",
+      "website": "https://www.tananola.com/",
+      "reservation_link": "https://www.opentable.com/r/tana-metairie",
+      "instagram": "https://www.instagram.com/tananola/",
+      "latitude": 29.9837,
+      "longitude": -90.1522,
+      "image_url": "https://images.otstatic.com/prod1/25122314/2/large.jpg"
     },
     {
       "name": "Willa Jean",
-      "type": "Bakery / Brunch",
+      "category": "restaurant",
       "address": "611 O'Keefe Ave, New Orleans, LA 70113",
-      "latitude": 29.9487,
-      "longitude": -90.0732,
-      "notes": "Agregado al plan de brunch sábado."
+      "phone": "+1-504-509-7334",
+      "website": "https://www.willajean.com/",
+      "reservation_link": null,
+      "instagram": "https://www.instagram.com/willajeannola/",
+      "latitude": 29.9488,
+      "longitude": -90.0738,
+      "image_url": "https://media.cntraveler.com/photos/5bdb6a3ff3e77b4b2df7d12b/16:9/w_2560%2Cc_limit/Willa-Jean_New-Orleans_2018_Willajean_Biscuits.jpg"
     },
     {
       "name": "Jack Rose",
-      "type": "Restaurant / Brunch",
+      "category": "restaurant",
       "address": "2031 St Charles Ave, New Orleans, LA 70130",
-      "latitude": 29.9339,
-      "longitude": -90.0795,
-      "notes": "Próximo restaurante con chicken & waffles cerca."
-    },
-    {
-      "name": "Nice Guys NOLA",
-      "type": "Restaurant / Brunch",
-      "address": "7910 Earhart Blvd, New Orleans, LA",
-      "latitude": 29.9625,
-      "longitude": -90.1426,
-      "notes": "Famoso por su Praline Chicken & Waffles."
-    },
-    {
-      "name": "Court of Two Sisters",
-      "type": "Restaurant / Jazz Brunch",
-      "address": "613 Royal St, French Quarter, New Orleans, LA",
-      "latitude": 29.9571,
-      "longitude": -90.0643,
-      "notes": "Brunch buffet histórico con música."
+      "phone": "+1-504-323-1500",
+      "website": "https://www.jackrosediningsaloon.com/",
+      "reservation_link": "https://www.opentable.com/r/jack-rose-new-orleans",
+      "instagram": "https://www.instagram.com/jackrosenola/",
+      "latitude": 29.9364,
+      "longitude": -90.0733,
+      "image_url": "https://images.otstatic.com/prod1/24599869/2/large.jpg"
     },
     {
       "name": "N7",
-      "type": "Restaurant / Wine Bar",
-      "address": "1117 Montegut St, Bywater, New Orleans, LA",
-      "latitude": 29.9642,
-      "longitude": -90.0326,
-      "notes": "Cena de cierre sugerida."
+      "category": "restaurant",
+      "address": "1117 Montegut St, New Orleans, LA 70117",
+      "phone": "+1-504-940-9488",
+      "website": "https://www.n7nola.com/",
+      "reservation_link": "https://resy.com/cities/no/n7",
+      "instagram": "https://www.instagram.com/n7nola/",
+      "latitude": 29.9699,
+      "longitude": -90.0386,
+      "image_url": "https://static.wixstatic.com/media/4ee2a8_0e3b414d0a244da8806c144f6b7b2bb0~mv2.jpg"
     },
     {
-      "name": "Vessel NOLA",
-      "type": "Restaurant",
-      "address": "3835 Iberville St, New Orleans, LA",
-      "latitude": 29.9748,
-      "longitude": -90.0896,
-      "notes": "Restaurante en iglesia restaurada con cócteles."
+      "name": "Potions (Vampire Speakeasy)",
+      "category": "bar",
+      "address": "725 St Peter St, New Orleans, LA 70116",
+      "phone": "+1-504-581-0801",
+      "website": "https://www.vampirecafe.com/potions",
+      "reservation_link": null,
+      "instagram": "https://www.instagram.com/vampirecafe_nola/",
+      "latitude": 29.9580,
+      "longitude": -90.0659,
+      "image_url": "https://vampirecafe.com/wp-content/uploads/2021/09/potions-bar.jpg"
     },
     {
-      "name": "Sylvain",
-      "type": "Restaurant / Gastropub",
-      "address": "625 Chartres St, French Quarter, New Orleans, LA",
-      "latitude": 29.9569,
-      "longitude": -90.0643,
-      "notes": "Opción de cena o almuerzo elegante."
+      "name": "French Quarter Phantoms",
+      "category": "tour",
+      "address": "718 N Rampart St, New Orleans, LA 70116",
+      "phone": "+1-504-666-8300",
+      "website": "https://frenchquarterphantoms.com/",
+      "reservation_link": "https://frenchquarterphantoms.com/tours",
+      "instagram": "https://www.instagram.com/fqphantoms/",
+      "latitude": 29.9630,
+      "longitude": -90.0653,
+      "image_url": "https://frenchquarterphantoms.com/wp-content/uploads/2020/09/fqphantoms-tour.jpg"
     },
     {
-      "name": "The Elysian Bar",
-      "type": "Bar / Restaurant",
-      "address": "2317 Burgundy St, Faubourg Marigny, New Orleans, LA",
-      "latitude": 29.9664,
-      "longitude": -90.0555,
-      "notes": "Ambiente artístico, ideal brunch o brunch con estilo."
+      "name": "New Orleans Pharmacy Museum",
+      "category": "museum",
+      "address": "514 Chartres St, New Orleans, LA 70130",
+      "phone": "+1-504-565-8027",
+      "website": "https://www.pharmacymuseum.org/",
+      "reservation_link": null,
+      "instagram": "https://www.instagram.com/nopharmacymuseum/",
+      "latitude": 29.9581,
+      "longitude": -90.0646,
+      "image_url": "https://www.pharmacymuseum.org/uploads/1/3/4/2/13423977/pharmacy-museum_front_orig.jpg"
+    },
+    {
+      "name": "Haus of Hoodoo",
+      "category": "shop",
+      "address": "631 Toulouse St, New Orleans, LA 70130",
+      "phone": null,
+      "website": "https://www.hausofhoodoo.com/",
+      "reservation_link": null,
+      "instagram": "https://www.instagram.com/hausofhoodoo/",
+      "latitude": 29.9586,
+      "longitude": -90.0642,
+      "image_url": "https://hausofhoodoo.com/cdn/shop/files/hausfront_1200x1200.jpg"
+    },
+    {
+      "name": "Audubon Aquarium & Insectarium",
+      "category": "attraction",
+      "address": "1 Canal St, New Orleans, LA 70130",
+      "phone": "+1-504-565-3033",
+      "website": "https://audubonnatureinstitute.org/aquarium",
+      "reservation_link": "https://ticket.audubonnatureinstitute.org/",
+      "instagram": "https://www.instagram.com/auduboninstitute/",
+      "latitude": 29.9511,
+      "longitude": -90.0635,
+      "image_url": "https://audubonnatureinstitute.org/images/aquarium/aquarium-shark-tunnel.jpg"
+    },
+    {
+      "name": "Audubon Zoo",
+      "category": "attraction",
+      "address": "6500 Magazine St, New Orleans, LA 70118",
+      "phone": "+1-504-861-2537",
+      "website": "https://audubonnatureinstitute.org/zoo",
+      "reservation_link": "https://ticket.audubonnatureinstitute.org/",
+      "instagram": "https://www.instagram.com/auduboninstitute/",
+      "latitude": 29.9246,
+      "longitude": -90.1286,
+      "image_url": "https://audubonnatureinstitute.org/images/zoo/zoo-gorilla.jpg"
+    },
+    {
+      "name": "St. Louis Cemetery No. 1",
+      "category": "tour",
+      "address": "425 Basin St, New Orleans, LA 70112",
+      "phone": "+1-504-596-3050",
+      "website": "https://cemeteries.noishf.org/st-louis-no-1/",
+      "reservation_link": "https://cemeteries.noishf.org/tours/",
+      "instagram": null,
+      "latitude": 29.9622,
+      "longitude": -90.0727,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/St_Louis_Cemetery_No_1.jpg"
     },
     {
       "name": "French Market",
-      "type": "Market / Cultural",
-      "address": "1008 N Peters St, French Quarter, New Orleans, LA",
-      "latitude": 29.9608,
-      "longitude": -90.0606,
-      "notes": "Mercado histórico con artesanías y comida local."
-    },
-    {
-      "name": "Jackson Square",
-      "type": "Landmark / Plaza",
-      "address": "Decatur St, French Quarter, New Orleans, LA",
-      "latitude": 29.9571,
-      "longitude": -90.0631,
-      "notes": "Plaza icónica frente a la Catedral."
-    },
-    {
-      "name": "Royal Street",
-      "type": "Street / Shopping",
-      "address": "Royal St, French Quarter, New Orleans, LA",
-      "latitude": 29.9580,
-      "longitude": -90.0650,
-      "notes": "Galerías, boutiques, arquitectura francesa típica."
-    },
-    {
-      "name": "Magazine Street",
-      "type": "Street / Shopping",
-      "address": "Magazine St, Garden District, New Orleans, LA",
-      "latitude": 29.9301,
-      "longitude": -90.0878,
-      "notes": "Avenida con tiendas, cafés y restaurantes en Uptown."
+      "category": "market",
+      "address": "1008 N Peters St, New Orleans, LA 70116",
+      "phone": "+1-504-522-2621",
+      "website": "https://www.frenchmarket.org/",
+      "reservation_link": null,
+      "instagram": "https://www.instagram.com/frenchmarketnola/",
+      "latitude": 29.9610,
+      "longitude": -90.0602,
+      "image_url": "https://www.frenchmarket.org/wp-content/uploads/2023/06/French-Market-Main-Entrance-scaled.jpg"
     }
   ]
 }
