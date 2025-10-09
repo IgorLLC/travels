@@ -64,12 +64,17 @@
     {
       "date": "2025-11-07",
       "time": "21:00",
-      "restaurant": "Arnaud’s Jazz Bistro + French 75 Bar",
+      "restaurant": "Arnaud's Jazz Bistro + French 75 Bar",
       "confirmation_number": "2109818395",
       "source": "OpenTable",
       "party_size": 2,
       "address": "813 Bienville St, New Orleans, LA 70112",
-      "type": "Dinner"
+      "type": "Dinner",
+      "coords": {
+        "lat": 29.9584,
+        "lng": -90.0676,
+        "label": "Arnaud's Jazz Bistro"
+      }
     },
     {
       "date": "2025-11-08",
@@ -79,17 +84,27 @@
       "source": "OpenTable",
       "party_size": 2,
       "address": "2919 Metairie Rd, Metairie, LA 70001",
-      "type": "Brunch"
+      "type": "Brunch",
+      "coords": {
+        "lat": 29.9846,
+        "lng": -90.0987,
+        "label": "Tana"
+      }
     },
     {
       "date": "2025-11-08",
       "time": "19:30",
-      "restaurant": "Muriel’s Jackson Square",
+      "restaurant": "Muriel's Jackson Square",
       "confirmation_number": "2110542113",
       "source": "OpenTable",
       "party_size": 2,
       "address": "801 Chartres St, New Orleans, LA 70116",
-      "type": "Dinner"
+      "type": "Dinner",
+      "coords": {
+        "lat": 29.9571,
+        "lng": -90.0637,
+        "label": "Muriel's Jackson Square"
+      }
     },
     {
       "date": "2025-11-09",
@@ -99,17 +114,27 @@
       "source": "OpenTable",
       "party_size": 2,
       "address": "901 Louisiana Ave, New Orleans, LA 70115",
-      "type": "Brunch"
+      "type": "Brunch",
+      "coords": {
+        "lat": 29.9286,
+        "lng": -90.0821,
+        "label": "Atchafalaya Restaurant"
+      }
     },
     {
       "date": "2025-11-09",
       "time": "18:15",
-      "restaurant": "Brennan’s",
+      "restaurant": "Brennan's",
       "confirmation_number": "2110373076",
       "source": "OpenTable",
       "party_size": 2,
       "address": "417 Royal St, New Orleans, LA 70130",
-      "type": "Dinner"
+      "type": "Dinner",
+      "coords": {
+        "lat": 29.9576,
+        "lng": -90.0649,
+        "label": "Brennan's"
+      }
     }
   ],
   "tickets": [
@@ -122,6 +147,62 @@
       "total_paid_usd": 125.88,
       "source": "Audubon Nature Institute WebStore",
       "confirmation_number": "Order #EC8E06DB-BF60-491D"
+    }
+  ],
+  "places": [
+    {
+      "name": "Audubon Aquarium of the Americas",
+      "address": "1 Canal St, New Orleans, LA 70130",
+      "coords": {
+        "lat": 29.9487,
+        "lng": -90.0626,
+        "label": "Audubon Aquarium"
+      }
+    },
+    {
+      "name": "Audubon Zoo",
+      "address": "6500 Magazine St, New Orleans, LA 70118",
+      "coords": {
+        "lat": 29.9215,
+        "lng": -90.1313,
+        "label": "Audubon Zoo"
+      }
+    },
+    {
+      "name": "New Orleans Pharmacy Museum",
+      "address": "514 Chartres St, New Orleans, LA 70130",
+      "coords": {
+        "lat": 29.9566,
+        "lng": -90.0642,
+        "label": "Pharmacy Museum"
+      }
+    },
+    {
+      "name": "French Market",
+      "address": "1008 N Peters St, New Orleans, LA 70116",
+      "coords": {
+        "lat": 29.9608,
+        "lng": -90.0606,
+        "label": "French Market"
+      }
+    },
+    {
+      "name": "Potions Speakeasy",
+      "address": "721 Bourbon St, New Orleans, LA 70116",
+      "coords": {
+        "lat": 29.9593,
+        "lng": -90.0651,
+        "label": "Potions Speakeasy"
+      }
+    },
+    {
+      "name": "Louis Armstrong New Orleans International Airport",
+      "address": "900 Airline Dr, Kenner, LA 70062",
+      "coords": {
+        "lat": 29.9934,
+        "lng": -90.2580,
+        "label": "MSY Airport"
+      }
     }
   ],
   "itinerary": {
