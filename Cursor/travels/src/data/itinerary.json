@@ -257,6 +257,176 @@
     "Audubon Experience Pass comprado vía WebStore oficial, válido 5 días.",
     "Potions es un speakeasy temático; contraseña provista en Vampire Tour.",
     "Tiempos de traslado ajustados para Metairie (Tana Brunch)."
+  ],
+  "places_of_interest": [
+    {
+      "name": "Arnaud's Jazz Bistro + French 75 Bar",
+      "type": "Restaurant / Jazz Bar",
+      "address": "813 Bienville St, French Quarter, New Orleans, LA 70112",
+      "latitude": 29.957405,
+      "longitude": -90.068697,
+      "notes": "Clásico restaurante criollo con música jazz."
+    },
+    {
+      "name": "Haus of Hoodoo",
+      "type": "Spiritual Shop / Cultural",
+      "address": "1716 Saint Charles Ave, New Orleans, LA 70130",
+      "latitude": 29.9370806,
+      "longitude": -90.0765932,
+      "notes": "Tienda botánica / espiritual. (Físico cerrado, presencia online activa)."
+    },
+    {
+      "name": "Audubon Aquarium & Insectarium",
+      "type": "Attraction / Museum",
+      "address": "1 Canal St, New Orleans, LA",
+      "latitude": 29.9487,
+      "longitude": -90.0626,
+      "notes": "Incluido en el pase Audubon Experience."
+    },
+    {
+      "name": "Audubon Zoo",
+      "type": "Zoological Park",
+      "address": "6500 Magazine St, New Orleans, LA",
+      "latitude": 29.9215,
+      "longitude": -90.1313,
+      "notes": "Parte del combo de actividades naturales."
+    },
+    {
+      "name": "New Orleans Pharmacy Museum",
+      "type": "Historical Museum",
+      "address": "514 Chartres St, French Quarter, New Orleans, LA",
+      "latitude": 29.9566,
+      "longitude": -90.0642,
+      "notes": "Museo de medicina antigua, pócimas y prácticas del siglo XIX."
+    },
+    {
+      "name": "Tana",
+      "type": "Restaurant / Brunch",
+      "address": "2919 Metairie Rd, Metairie, LA 70001",
+      "latitude": 29.9846,
+      "longitude": -90.0987,
+      "notes": "Brunch confirmado para sábado 8 nov."
+    },
+    {
+      "name": "Muriel's Jackson Square",
+      "type": "Restaurant",
+      "address": "801 Chartres St, French Quarter, New Orleans, LA 70116",
+      "latitude": 29.9571,
+      "longitude": -90.0637,
+      "notes": "Cena confirmada sábado 8 nov."
+    },
+    {
+      "name": "Brennan's",
+      "type": "Restaurant",
+      "address": "417 Royal St, French Quarter, New Orleans, LA 70130",
+      "latitude": 29.9576,
+      "longitude": -90.0649,
+      "notes": "Cena confirmada domingo 9 nov."
+    },
+    {
+      "name": "Atchafalaya Restaurant",
+      "type": "Restaurant / Brunch",
+      "address": "901 Louisiana Ave, New Orleans, LA 70115",
+      "latitude": 29.9286,
+      "longitude": -90.0821,
+      "notes": "Brunch confirmado domingo 9 nov."
+    },
+    {
+      "name": "Willa Jean",
+      "type": "Bakery / Brunch",
+      "address": "611 O'Keefe Ave, New Orleans, LA 70113",
+      "latitude": 29.9487,
+      "longitude": -90.0732,
+      "notes": "Agregado al plan de brunch sábado."
+    },
+    {
+      "name": "Jack Rose",
+      "type": "Restaurant / Brunch",
+      "address": "2031 St Charles Ave, New Orleans, LA 70130",
+      "latitude": 29.9339,
+      "longitude": -90.0795,
+      "notes": "Próximo restaurante con chicken & waffles cerca."
+    },
+    {
+      "name": "Nice Guys NOLA",
+      "type": "Restaurant / Brunch",
+      "address": "7910 Earhart Blvd, New Orleans, LA",
+      "latitude": 29.9625,
+      "longitude": -90.1426,
+      "notes": "Famoso por su Praline Chicken & Waffles."
+    },
+    {
+      "name": "Court of Two Sisters",
+      "type": "Restaurant / Jazz Brunch",
+      "address": "613 Royal St, French Quarter, New Orleans, LA",
+      "latitude": 29.9571,
+      "longitude": -90.0643,
+      "notes": "Brunch buffet histórico con música."
+    },
+    {
+      "name": "N7",
+      "type": "Restaurant / Wine Bar",
+      "address": "1117 Montegut St, Bywater, New Orleans, LA",
+      "latitude": 29.9642,
+      "longitude": -90.0326,
+      "notes": "Cena de cierre sugerida."
+    },
+    {
+      "name": "Vessel NOLA",
+      "type": "Restaurant",
+      "address": "3835 Iberville St, New Orleans, LA",
+      "latitude": 29.9748,
+      "longitude": -90.0896,
+      "notes": "Restaurante en iglesia restaurada con cócteles."
+    },
+    {
+      "name": "Sylvain",
+      "type": "Restaurant / Gastropub",
+      "address": "625 Chartres St, French Quarter, New Orleans, LA",
+      "latitude": 29.9569,
+      "longitude": -90.0643,
+      "notes": "Opción de cena o almuerzo elegante."
+    },
+    {
+      "name": "The Elysian Bar",
+      "type": "Bar / Restaurant",
+      "address": "2317 Burgundy St, Faubourg Marigny, New Orleans, LA",
+      "latitude": 29.9664,
+      "longitude": -90.0555,
+      "notes": "Ambiente artístico, ideal brunch o brunch con estilo."
+    },
+    {
+      "name": "French Market",
+      "type": "Market / Cultural",
+      "address": "1008 N Peters St, French Quarter, New Orleans, LA",
+      "latitude": 29.9608,
+      "longitude": -90.0606,
+      "notes": "Mercado histórico con artesanías y comida local."
+    },
+    {
+      "name": "Jackson Square",
+      "type": "Landmark / Plaza",
+      "address": "Decatur St, French Quarter, New Orleans, LA",
+      "latitude": 29.9571,
+      "longitude": -90.0631,
+      "notes": "Plaza icónica frente a la Catedral."
+    },
+    {
+      "name": "Royal Street",
+      "type": "Street / Shopping",
+      "address": "Royal St, French Quarter, New Orleans, LA",
+      "latitude": 29.9580,
+      "longitude": -90.0650,
+      "notes": "Galerías, boutiques, arquitectura francesa típica."
+    },
+    {
+      "name": "Magazine Street",
+      "type": "Street / Shopping",
+      "address": "Magazine St, Garden District, New Orleans, LA",
+      "latitude": 29.9301,
+      "longitude": -90.0878,
+      "notes": "Avenida con tiendas, cafés y restaurantes en Uptown."
+    }
   ]
 }
 

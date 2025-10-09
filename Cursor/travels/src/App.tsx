@@ -8,6 +8,7 @@ import {
 import { Home } from "@/pages/Home";
 import { Itinerary } from "@/pages/Itinerary";
 import { MapView } from "@/pages/Map";
+import { PlacesOfInterest } from "@/pages/PlacesOfInterest";
 import { Settings } from "@/pages/Settings";
 import { useTripStore } from "@/store/useTripStore";
 import { formatDate } from "@/lib/format";
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "itinerary", element: <Itinerary /> },
+      { path: "places", element: <PlacesOfInterest /> },
       { path: "map", element: <MapView /> },
       { path: "settings", element: <Settings /> },
     ],
@@ -32,6 +34,7 @@ export default function App() {
 const tabs = [
   { path: "/", label: "Inicio" },
   { path: "/itinerary", label: "Itinerario" },
+  { path: "/places", label: "Lugares" },
   { path: "/map", label: "Mapa" },
   { path: "/settings", label: "Ajustes" },
 ];
@@ -59,10 +62,10 @@ function Layout() {
             <p className="text-sm font-medium text-slate-700">{details.hotel.name}</p>
           </div>
         </div>
-        <nav className="mx-auto flex max-w-4xl gap-2 px-4 pb-3">
+        <nav className="mx-auto flex max-w-4xl gap-1.5 px-4 pb-3">
           {tabs.map((tab) => {
             const isActive = location.pathname === tab.path;
-            const baseClass = "flex-1 rounded-full px-4 py-2 text-center text-sm font-medium transition";
+            const baseClass = "flex-1 rounded-full px-3 py-2 text-center text-xs sm:text-sm font-medium transition whitespace-nowrap";
             return (
               <NavLink
                 end={tab.path === "/"}
